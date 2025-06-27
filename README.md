@@ -1,5 +1,5 @@
 # ads-curso-completo
- todos os conteúdos, exercícios, provas, projetos e anotações dos 7 semestres da faculdade de analise e desenvolvimento de sistemas 
+ todos os conteúdos, exercícios, provas, projetos e anotações dos 6 semestres da faculdade de analise e desenvolvimento de sistemas 
 # Curso Tecnólogo em Análise e Desenvolvimento de Sistemas
 
 Este repositório contém todos os materiais, exercícios, provas e anotações organizadas por semestre, referentes ao curso tecnólogo de ADS.
