@@ -111,6 +111,38 @@ Este repositório contém a coleção de exercícios desenvolvidos para a discip
 
 ---
 
+## Provas
+
+
+
+Exercícios da **1ª Prova** com foco em algoritmos sequenciais simples, utilizando entrada, processamento e saída de dados:
+
+1. **Divisão de vendas da padaria Padoca**  
+   Calcula total vendido de pães e broas e reparte em custos, poupança e lucro.
+
+2. **Limpeza de terreno**  
+   Recebe largura e comprimento do terreno e calcula custo da limpeza com imposto incluso.
+
+---
+
+Exercícios da **2ª Prova**, com foco em tomada de decisão e uso de estruturas condicionais:
+
+1. **Idade do filho mais velho (Dona Mônica)**  
+   Dado a idade da mãe e dois filhos, calcula a idade do terceiro e exibe quem é o mais velho.
+
+2. **Divisão das moedas da arca do Capitão Olho Roxo**  
+   Distribui moedas entre marinheiros e o capitão, verifica se o capitão poderá pagar a manutenção do navio.
+
+3. **Arrecadação de multas (DETRAN)**  
+   Recebe CNHs, número e valor das multas; calcula total da dívida individual, total arrecadado, motorista com mais multas e quantidade sem infrações.
+
+4. **Controle de caixa da padaria**  
+   Sistema interativo que registra vendas em tempo real e, ao encerrar, exibe total de vendas, lucro e custo de produção com data/hora de fechamento.
+
+5. **Cronômetro decrescente com array**  
+   Cronômetro baseado em array que simula contagem de tempo no formato MM:SS.
+
+---
 ## Como Compilar e Executar
 
 Para compilar um arquivo `.c` utilize:
