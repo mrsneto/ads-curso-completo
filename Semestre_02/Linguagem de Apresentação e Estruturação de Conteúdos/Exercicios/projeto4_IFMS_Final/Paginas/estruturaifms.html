@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="Favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./CSS/estrutura.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+    <title>Home - Instituto Federal de Mato Grosso do Sul</title>
+</head>
+<body><nav id="navTop">
+    <ul>
+        <li><a class="flag" href="#" style="margin-right: 15px;""><img width=" 30px" src="IMG/flag.png" alt=""></a>
+        </li>
+        <li><a class="flag" style="margin-right: 45px;" href="#">BRASIL</a></li>
+        <li><a href="#" style="color: red ; margin-right: 15px;"> CORONAVÍRUS (COVID-19)</a></li>
+        <li><a style="margin-right: 15px;" href="#"> Simplifique!</a></li>
+        <li><a href="#" style="margin-right: 15px;"> Participe</a></li>
+        <li><a href="#" style="margin-right: 15px;"> Acesso à informação</a></li>
+        <li><a href="#" style="margin-right: 15px;"> Legislação</a></li>
+        <li><a href="#" style="margin-right: 15px;"> Canais</a></li>
+    </ul>
+</nav>
+
+<header>
+    <div id="logo">
+        <h5>IFMS</h5>
+        <h1>Instituto Federal de Mato Grosso do Sul</h1>
+        <h5>MINISTÉRIO DA EDUCAÇÃO</h5>
+    </div>
+</header>
+
+<nav id="navBottom">
+    <ul>
+        <li><a href="#">Webmail </a></li>
+        <li><a href="#">Perguntas Frequentes </a></li>
+        <li><a href="#">Sistemas </a></li>
+        <li><a href="#">Comunicação </a></li>
+        <li><a href="#">Contato </a></li>
+    </ul>
+</nav>
+
+<main class="main">
+    <h3>Estrutura Física do Campus Corumbá</h3>
+    <article>
+        <p>
+            O campus Corumbá do Instituto Federal de Mato Grosso do Sul (IFMS) é uma instituição de ensino localizada na
+            cidade de Corumbá, no estado de Mato Grosso do Sul. O campus oferece uma variedade de cursos técnicos e
+            superiores, com o objetivo de promover a formação profissional de qualidade e contribuir para o
+            desenvolvimento da região.
+        </p>
+        <img src="CSS/imagens/campus-cb.png" alt="Campus Corumbá">
+
+        <p>
+            A estrutura física do IFMS campus Corumbá é projetada para atender às necessidades educacionais dos
+            estudantes e proporcionar um ambiente propício ao aprendizado. O campus conta com um conjunto de edifícios
+            que abrigam salas de aula, laboratórios, biblioteca, auditório e espaços administrativos.
+        </p>
+
+        <p>
+            As salas de aula são espaços amplos e confortáveis, equipados com recursos audiovisuais para facilitar o
+            processo de ensino e aprendizagem. Os laboratórios são especializados e oferecem infraestrutura adequada
+            para as aulas práticas, permitindo que os alunos apliquem os conhecimentos teóricos na prática.
+        </p>
+        <img src="CSS/imagens/sala.jpeg" alt="Sala de aula">
+
+        <p>
+            A biblioteca do campus Corumbá é um local importante para os estudantes, oferecendo um acervo diversificado
+            de livros, revistas, periódicos e acesso a recursos digitais. Ela é um espaço de estudo e pesquisa, onde os
+            alunos podem realizar suas atividades acadêmicas e buscar informações relevantes para seus estudos.
+        </p>
+        <img src="CSS/imagens/biblioteca.jpeg" alt="Biblioteca do campus">
+
+        <p>
+            Além disso, o campus possui um auditório, utilizado para palestras, seminários, apresentações e eventos
+            acadêmicos. O auditório é equipado com recursos audiovisuais e oferece um ambiente adequado para a
+            realização dessas atividades.
+        </p>
+        <img src="CSS/imagens/auditorio.jpeg" alt="Auditório">
+
+        <p>
+            A estrutura administrativa do campus é composta por salas destinadas aos setores administrativos, como
+            secretaria acadêmica, coordenações de cursos, direção e coordenação de ensino. Esses espaços são essenciais
+            para o bom funcionamento da instituição e para o atendimento aos alunos.
+        </p>
+
+        <p>
+            Além dos prédios principais, o campus Corumbá possui áreas de convivência ao ar livre, como pátios e
+            jardins, que proporcionam espaços de integração e descanso para os estudantes.
+        </p>
+
+        <p>
+            O IFMS campus Corumbá também investe em tecnologia, oferecendo acesso à internet em todos os seus prédios e
+            laboratórios, possibilitando que os alunos utilizem recursos online e desenvolvam habilidades digitais
+            essenciais para o mercado de trabalho atual.
+        </p>
+
+        <p>
+            Em resumo, a estrutura física do IFMS campus Corumbá é projetada para proporcionar um ambiente adequado ao
+            aprendizado e desenvolvimento dos estudantes. Com salas de aula, laboratórios, biblioteca, auditório e
+            espaços administrativos bem equipados, o campus oferece condições para uma formação profissional de
+            qualidade e contribui para o crescimento educacional e econômico da região.
+        </p>
+    </article>
+</main>
+<script>
+    
+    var ambientes = [
+        {
+            descricao: "campus",
+            imagem: "CSS/imagens/auditorio.jpeg"
+        },
+        {
+            descricao: "sala de aula",
+            imagem: "CSS/imagens/sala.jpeg"
+        },
+       
+    ];
+
+   
+    var ambientesContainer = document.getElementById("ambientes-container");
+
+    ambientes.forEach(function (ambiente) {
+        var ambienteCard = document.createElement("div");
+        ambienteCard.className = "ambiente-card";
+
+        var ambienteImagem = document.createElement("img");
+        ambienteImagem.src = ambiente.imagem;
+        ambienteImagem.alt = ambiente.descricao;
+        ambienteCard.appendChild(ambienteImagem);
+
+        var ambienteDescricao = document.createElement("p");
+        ambienteDescricao.textContent = ambiente.descricao;
+        ambienteCard.appendChild(ambienteDescricao);
+
+        ambientesContainer.appendChild(ambienteCard);
+    });
+</script>
+
+
+</body>
+</html>

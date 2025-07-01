@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Linguagens de Marcação</title>
+		<meta charset="utf-8">
+
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+		    body{
+				max-width: 1200px;
+				min-width: 800px;
+				margin: auto;
+				font-family: 'Space Mono', monospace;
+				background-color: rgb(236, 233, 233);
+			}
+			h1,h2{
+				border: 1px solid black;
+				border-radius: 15px;
+				text-align: center;
+				text-transform: uppercase;
+				color: rgb(179, 35, 107);
+			}
+
+			p{
+
+				text-indent: 30px;
+				line-height: 2em;
+				text-align: justify;
+				color: rgb(43, 27, 54);
+			}
+
+			ol{
+				background-color: gray;
+				color: white;
+				width: 100%;
+			}
+
+			
+		</style>
+	</head>
+	<body>
+		<h1>Linguagens de Marcação</h1>
+		<p>
+			Linguagens de marcação são conjuntos de regras que organizam
+			dados em documentos de texto. Estas linguagens podem agrupar estes dados
+			em elementos que desempenham papéis específicos dentro do documento.
+		</p>
+		
+		<p>
+			Estas linguagens podem ser categorizadas de acordo com a natureza dos dados
+			que são tratados nos documentos. Os dados podem representar tanto informações
+			extraídas de um banco de dados quanto podem ser organizadas como textos 
+			estruturados como parágrafos, seções, capítulos, etc. Linguagens de marcação como
+			XML podem ser utilizadas no primeiro caso, enquanto que linguagens como LaTeX
+			podem ser indicadas para o segundo.
+		</p>
+		
+		<p>
+			Além disso, existem linguagens que podem ser interpretadas a partir de seu código
+			de marcação por software específico, assim como também existem linguagens cujo
+			código pode ser compilado a fim de gerar um arquivo objeto em outro formato. 
+			Um exemplo de linguagem interpretada é a HTML, já documentos escritos em linguagem LaTeX 
+			podem ser compilados para gerar um arquivo PDF a partir de suas marcações.
+		</p>
+		
+		<p>
+			Nesta disciplina, estudaremos a linguagem HTML, que é uma linguagem cujo código 
+			é interpretado pelos navegadores, que, por sua vez, organizam seu conteúdo de
+			forma a favorecer sua visualização pelos usuários. Documentos HTML são o principal
+			formato de documentos WWW que trafegam pela internet.
+		</p>
+
+		<h2>A Linguagem HTML</h2>
+		<p>
+			HTML é a linguagem utilizada para criar uma estrutura capaz de organizar dados a 
+			serem divulgados na internet. Os documentos HTML são, portanto, arquivos de hipertexto 
+			que podem ser interpretados e renderizados por um navegador. Documentos HTML podem 
+			ser produzidos diretamente por um desenvolvedor (documento estático) ou podem ser 
+			gerados sob medida por programas de computador (documento dinâmico).
+		</p>
+		<p>
+			Para que possa ser produzido por um desenvolvedor, é preciso que este desenvolvedor 
+			conheça os elementos e regras da linguagem HTML. A primeira regra em um documento 
+			HTML é que seus elementos são definidos por marcadores que, na maioria das vezes, 
+			vêm em pares: a tag de abertura e a tag de fechamento do elemento.
+		</p>
+		
+		<ol>
+			<li>
+				A tag de abertura vem com o nome do elemento delimitado pelo símbolos &lt; e &gt;
+			</li>
+			<li>
+				A tag de fechamento é semelhante a tag de abertura, entretanto o nome do elemento 
+				deve vir precedido de uma barra (caracter "/")
+			</li>
+		</ol>
+		
+		<p>Veja o exemplo abaixo:</p>
+		
+		<hr>
+<pre>
+	&lt;html&gt;		&lt;!-- Esta é a tag de abertura do elemento HTML --&gt;
+		
+		conteúdo
+	
+	&lt;/html&gt;		&lt;!-- Esta é a tag de fechamento do elemento HTML --&gt;</pre>
+		
+		<hr>
+
+        <h2>Estrutura Básica de um Documento HTML</h2>
+		
+		<p>
+			A estrutura de um documento HTML deve ser bem definida para que o 
+			navegador tenha condições de interpretar o hipertexto da melhor 
+			maneira possível. Primeiramente, é preciso considerar que a WWW 
+			está passando por um processo de padronização da linguagem HTML 
+			e que, atualmente, os documentos HTML devem ser editados em HTML 5.
+		</p>
+
+		<p>
+			Para isso, a primeira coisa em um documento HTML deve ser a diretiva DOCTYPE. 
+			Esta diretiva informa ao navegador qual é a versão da HTML em que o documento 
+			foi editado. O DOCTYPE para o HTML 5 é mostrado abaixo:
+		</p>
+		
+		<hr>
+
+		<pre>	&lt;!DOCTYPE html&gt;</pre>
+
+		<hr>
+		
+		<p>
+			Também é padronizado que documentos HTML tenham alguns elementos obrigatórios em sua marcação:
+		</p>
+
+		<ol>
+			<li>Elemento HTML: Delimita o início e o fim do próprio documento</li>
+			<li>Elemento HEAD: Utilizado para organizar informações sobre o documento</li>
+			<li>Elemento TITLE: Define o título do documento e deve ficar dentro do HEAD</li>
+			<li>Elemento BODY: Corpo do documento, onde ficam os elementos visuais</li>
+		</ol>
+		
+		<p>
+			Veja abaixo a estrutura básica de um documento HTML:
+		</p>
+
+		<hr>
+		
+		<pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+		&lt;!-- Esta é o CABEÇA do documento --&gt;
+		&lt;title&gt;Título do Documento&lt;/title&gt;
+    &lt;/head&gt;
+    
+    &lt;body&gt;
+		&lt;!-- Este é o CORPO do documento --&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</pre>
+
+		<hr>
+
+        <h2>Elementos Textuais</h2>
+		<p>
+			Algumas características do navegador quanto a renderização dos documentos 
+			são associadas à maneira como esses programas organizam o conteúdo na 
+			tela para o usuário.
+		</p>
+		<p>
+			Por mais que um texto seja editado com quebras de linha e indentações, 
+			esses recursos são ignorados pelo navegador. Outra característica é que para 
+			que o texto exerça uma determinada função dentro do conteúdo (um cabeçalho, 
+			um parágrafo, etc), isto deve ser especificado na marcação.
+		</p>
+		<p>
+			Para isso, existe um conjunto de elementos textuais na HTML
+		</p>
+		<ol>
+			<li>
+				Elementos H1 - H6: definem cabeçalhos de texto de acordo com seu 
+				grau de importância sendo 1 para mais alta e 6 para a mais baixa
+			</li>
+			<li>
+				Elemento P: define que o seu conteúdo deve ser tratado como um parágrafo 
+				pelo navegador. Cada parágrafo acrescenta automaticamente uma quebra de linha 
+				no fim de seu conteúdo, jogando o elemento que vier a seguir uma linha abaixo
+			</li>
+			<li>
+				Elementos B e STRONG: utilizados para grifar texto, deixando-os em negrito. 
+				O elemento STRONG acrescenta um sentido semântico ao conteúdo
+			</li>
+			<li>
+				Elementos I e EM: utilizados para marcar texto com itálico. 
+				O elemento EM acrescenta um sentido semântico ao conteúdo
+			</li>
+		</ol>
+		<p>
+			Além destes, outros elementos textuais podem ser encontrados no 
+			<a href="https://www.w3schools.com/html/html_formatting.asp" target="_blank">W3Schools</a>, 
+			entre eles o MARK (marca-texto), SUP (sobrescrito) e SUB (subscrito), 
+			DEL (texto deletado) e INS (texto inserido).
+		</p>	
+	</body>
+</html>
